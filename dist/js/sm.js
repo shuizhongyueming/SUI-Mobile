@@ -4,7 +4,7 @@
  *
  * =====================================================
  */
-;$.smVersion = "0.6.2";+function ($) {
+;$.smVersion = "0.6.3";+function ($) {
     "use strict";
 
     //全局配置
@@ -186,7 +186,7 @@
             for (var i = 0; i < this.length; i++) {
                 var el = this[i];
                 // delete multiple data in dataset
-                if (key in tmpData) delete el.dataset[key];
+                // if (key in tmpData) delete el.dataset[key];
 
                 if (!el.__eleData) el.__eleData = {};
                 el.__eleData[key] = value;
